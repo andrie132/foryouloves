@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: calc(25% - 30px);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: calc(100% - 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px;">Image Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://templates-for-printing.com/wp-content/uploads/2020/11/I-Capital-Letter-Pink-with-black-contours.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://templates-for-printing.com/wp-content/uploads/2020/11/L-Capital-Letter-Pink-with-black-contours.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://templates-for-printing.com/wp-content/uploads/2020/11/O-Capital-Letter-Pink-with-black-contours.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://templates-for-printing.com/wp-content/uploads/2020/11/V-Capital-Letter-Pink-with-black-contours.jpg" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://templates-for-printing.com/wp-content/uploads/2020/11/E-Capital-Letter-Pink-with-black-contours.jpg" alt="Gallery Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://templates-for-printing.com/wp-content/uploads/2020/11/U-Capital-Letter-Pink-with-black-contours.jpg" alt="Gallery Image 6">
+        </div>
+    </div>
+</body>
+</html>
